@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .form {
+        height: 25rem;
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+        padding: 2.5rem 1.5rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.5rem;
+      }
+
+      button {
+        width: 100%;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register with us</h1>
+      <form action="" method="POST" class="form">
+        <input type="text" name="firstName" placeholder="Enter first name" />
+        <input type="text" name="lastName" placeholder="Enter last name" />
+        <input type="email" name="email" placeholder="Enter email" />
+        <input type="text" name="username" placeholder="Enter Username" />
+        <input type="password" name="password" placeholder="Choose password" />
+        <input
+          type="password"
+          name="confirmPassword"
+          placeholder="Confirm password"
+        />
+        <div>
+          &nbsp;<label for="profile"> Select pic:</label>
+          <input
+            id="profile"
+            type="file"
+            name="profilePic"
+            value="select picture"
+          />
+        </div>
+        <button type="submit" name="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
