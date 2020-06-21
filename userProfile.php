@@ -18,7 +18,6 @@ if (isset($_GET['username'])) {
     echo 'alert("something went wrong")';
     echo '</script>';
 }
-
 ?>
 
 
@@ -29,16 +28,8 @@ if (isset($_GET['username'])) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Virtual Journal</title>
-    <link rel="stylesheet" href="style.css" />
-
-
-    <style>
-        img {
-            max-width: 300px;
-            border-radius: 30%;
-        }
-    </style>
-
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -68,7 +59,13 @@ if (isset($_GET['username'])) {
                 <?= $bio; ?>
             </p>
         </div>
-        <div class="right-container"></div>
+        <div class="right-container">
+            <a href="#" class="note-btn">Add new entry</a>
+            <a href="#" class="note-btn">Check previous entry</a>
+            <a href="#" class="note-btn">Delete previous entry</a>
+            <a href="#" class="note-btn">Update previous entry</a>
+            <a href="#" class="note-btn">Send</a>
+        </div>
     </main>
 
     <footer>designed by Ashton Naidoo <sup>&reg;</sup></footer>
